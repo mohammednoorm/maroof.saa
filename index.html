@@ -1,0 +1,1411 @@
+<!doctype html>
+<html>
+    <head>
+        <!--Smart Banner-->
+        <meta name="apple-itunes-app" content="app-id=1149338980">
+        <meta name="google-play-app" content="app-id=com.thiqa.maroof">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="android-touch-icon" href="android-icon.png"/>
+		
+		<link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+        <meta name="google-signin-client_id" content='670622807755-i7ec196a3s6utfopcrd4ib3g3ekkcadu.apps.googleusercontent.com'>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <meta name="keywords" content="معروف">
+        <meta name="description" content="مبادرة من وزارة التجارة السعودية بالتعاون مع شركة (ثقة) لخدمات الأعمال من أجل تطويرها وتشغيلها . معروف خدمة جديدة ومفيدة لكل المتعاملين في التجارة الإلكترونية سواء بائعين أو مشترين .ومثل ما يعرف الجميع أن التجارة الإلكترونية هي وسيلة جديدة يستطيع الجميع من خلالها أن يبيع أو يشتري عبر المنصات الإلكترونية ووسائل الاتصال الحديثة.">
+        <title>معروف
+    </title>
+        <!-- FAVICON AND APPLE TOUCH -->
+        <link rel="shortcut icon" href="/Content/dist/images/favicon.ico">
+        <!-- CUSTOM & PAGES STYLE -->
+        <!--  JS LIB -->
+        <!-- jQuery and friends -->
+        <script src="/Content/dev/js/jquery-2.2.4.js"></script>
+        <script src="/Content/dist/js/layout.min.js"></script>
+        <!-- CSS AUTO RENDER -->
+        <link href="style.css" rel="stylesheet"/>
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0]
+                  , j = d.createElement(s)
+                  , dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            }
+            )(window, document, 'script', 'dataLayer', 'GTM-TZG5BRN');
+        </script>
+        <!-- End Google Tag Manager -->
+    </head>
+    <body>
+        <!-- Google Tag Manager -->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src='https://www.googletagmanager.com/ns.html?id=GTM-TZG5BRN' height='0' width='0' style='display:none;visibility:hidden'></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <!-- End Google Tag Manager -->
+        <!-- <script src="~/Content/dev/js/smart-app-banner.js"></script> -->
+        <script type="text/javascript">
+            new SmartBanner({
+                daysHidden: 15,
+                // days to hide banner after close button is clicked (defaults to 15)
+                daysReminder: 90,
+                // days to hide banner after "VIEW" button is clicked (defaults to 90)
+                appStoreLanguage: 'us',
+                // language code for the App Store (defaults to user's browser language)
+                title: 'معروف',
+                author: 'Maroof',
+                button: 'View',
+                store: {
+                    ios: 'On the App Store',
+                    android: 'In Google Play',
+                    windows: 'In Windows store'
+                },
+                price: {
+                    ios: 'FREE',
+                    android: 'FREE',
+                    windows: 'FREE'
+                }// , theme: '' // put platform type ('ios', 'android', etc.) here to force single theme on all device
+                ,
+                icon: 'http://a2.mzstatic.com/us/r30/Purple71/v4/27/7e/ae/277eaed9-2647-ee3c-e159-f617e8cb9c5e/icon175x175.jpeg'// full path to icon image if not using website icon image
+                // , force: 'ios' // Uncomment for platform emulation
+            });
+
+            var defaultRangeValidator = $.validator.methods.range;
+            $.validator.methods.range = function(value, element, param) {
+                if (element.type === 'checkbox') {
+                    // if it's a checkbox return true if it is checked
+                    return element.checked;
+                } else {
+                    // otherwise run the default validation function
+                    return defaultRangeValidator.call(this, value, element, param);
+                }
+            }
+        </script>
+        <div id="main-container">
+            <div class='message-box-container container'>
+                <div class='row'>
+                    <div class='message-box col-xs-12'></div>
+                </div>
+            </div>
+            <!-- HEADER -->
+            <header>
+                <div id="header">
+                    <div class="container">
+                        <!-- search bar  -->
+                        <!-- Desktop header  -->
+                        <div class="row">
+                            <div style="position:absolute; left:10px; z-index:9;" class="pull-left hidden-lg hidden-md">
+                                <a href="https://maroof.sa/" class="top-logo">
+                                    <img src="/imges/mmmm.svg" alt="Maroof Logo"/>
+                                </a>
+                            </div>
+                            <a id="mobile-menu-button" href="https://maroof.sa/220001" class="pull-right hidden-lg hidden-md">
+                                <i class="fa fa-bars"></i>
+                                <span class="hidden-for_web--accessibility">.</span>
+                            </a>
+                            <div class="col-md-2 text-center hidden-xs hidden-sm" style="z-index:9; position: relative;">
+                                <a href="https://maroof.sa/" class="top-logo">
+                                    <img src="/imges/mmmm.svg" alt="Maroof Logo"/>
+                                </a>
+                            </div>
+                            <div class="col-md-5">
+                                <nav class="hidden-xs hidden-sm">
+                                    <ul class="menu clearfix">
+                                        <li>
+                                            <a href="https://maroof.sa/Home/About">عن معروف </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://maroof.sa/Home/ContactUs">تواصل معنا</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="searchItem-wrapper ">
+                                    <button id="HeaderSearchItem" class="searchItem-mainBtn"></button>
+                                    <div class="searchItem" id="searchContainer">
+                                        <form action="/Business/Search" id="search-formNew" method="get">
+                                            <button type="submit" class="searchItem-searchBtn">بحث</button>
+                                            <input type="search" class="searchItem-input" name="keyword" maxlength="40" placeholder="البحث في معروف"/>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 hidden-xs hidden-sm">
+                                <nav>
+                                    <ul class="menu clearfix pull-left">
+                                        <li>
+                                            <a href="https://efile.mc.gov.sa/ar/account/login?client_id=428E2F08-77B2-48AA-91F7-7D6ACEA47D2E" title="قم بالدخول اذا كنت بالفعل مسجل لدى معروف">تسجيل دخول</a>
+                                        </li>
+                                        <li>
+                                            <a class="create-account-link reg-btn-top" href="https://maroof.sa/Account/Agreement">إنشاء حساب
+                    </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <nav class="hidden-lg hidden-md">
+                                <ul class="menu clearfix" id="menu">
+                                    <li>
+                                        <a href="https://maroof.sa/Home/About">
+                                            <i class="fa fa-info-circle"></i>
+                                            عن معروف 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://maroof.sa/Home/ContactUs">
+                                            <i class="fa fa-envelope"></i>
+                                            تواصل معنا
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://efile.mc.gov.sa/ar/account/login?client_id=428E2F08-77B2-48AA-91F7-7D6ACEA47D2E" title="قم بالدخول اذا كنت بالفعل مسجل لدى معروف">تسجيل دخول</a>
+                                    </li>
+                                    <li>
+                                        <a class="create-account-link" href="https://maroof.sa/Account/Agreement">إنشاء حساب</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- container -->
+                </div>
+                <!-- header -->
+            </header>
+            <!-- HEADER -->
+            <!-- PAGE CONTENT -->
+            <div id="page-content">
+                <!-- BODY -->
+                <div id="page-content">
+                    <!-- CERTIFICATE HEADER CONTENT -->
+                    <div class="cer-header">
+                        <div class="container">
+                            <div class="col-sm-4 z-index-h mr-b-10">
+                                <div class="media mr-b-10">
+                                    <div class="media-right media-right--width">
+                                        <img class="media-object img-circle img-100" alt="متجر بيع حسابات ببجي شحن شدات" src="https://maroof.sa//app/businesses/Tmp/attachment_204332.jpg">
+                                    </div>
+                                    <div class="media-body media-body--width">
+                                        <h3 class="media-heading text-primary">
+                                            <span>متجر بيع حسابات ببجي شحن شدات</span>
+                                            &nbsp;
+                                        </h3>
+                                        <h3 class="media-heading text-primary"></h3>
+                                        <p style="margin-bottom:0px;">تسويق إلكتروني</p>
+                                        <p style="margin-bottom:0px;">
+                                            <span>السجل التجاري :  &nbsp;</span>
+                                            <span>5957100715</span>
+                                        </p>
+                                        <p style="margin-bottom:0px;">
+                                            <span>نوع العمل الرئيسي:&nbsp;</span>
+                                            <span>متجر إلكتروني  </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                            <div>
+                                <!-- Modal -->
+                                <div id="divEditBusinessProfileHeader"></div>
+                                <script>
+
+                                    function uploadOnSuccess(result) {
+                                        console.log(result);
+                                        $("#CurrentImage").hide();
+                                    }
+
+                                    function uploadOnDelete() {
+                                        console.log('uploadOnDelete');
+                                    }
+
+                                    function uploadOnDelete(result) {
+                                    }
+                                    function GetEditHeaderViewOnSeccess(result) {
+                                        if (result.errorMSG) {
+                                            mciMessage(result.errorMSG, mciMessageType.Info);
+                                            return;
+                                        } else {
+                                            //$('#divEditRefundPartial').html(result);
+                                            $('#myModal').modal('show');
+                                        }
+                                    }
+                                </script>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="cert-stamp-img">
+                                    <img src="/imges/gold-logo.png"/>
+                                    <span class="maarof-number">رقم معروف: 7349910</span>
+                                    <img alt="متجر بيع حسابات ببجي شحن شدات" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAZ6SURBVHhe7dDRqi03EgRR//9P3zGK5BCQllQ6eMAPvZ6KqOrem/7rz2fs+1gPvo/14PtYD76P9eD7WA++j/Xg+1gPvo/14PtYD76P9eD7WA++j/Vg+rH+GssD4s7c2GJSjC2SlqSBPHAzvhvLA+LO3NhiUowtkpakgTxwM74bvNQ3uxmUOT/FDAqSZNdtcvNjfDd4qW92MyhzfooZFCTJrtvk5sf4Ti9lNnfmHW7gwmx0c2du3vZs7sxX4zu9lNncmXe4gQuz0c2duXnbs7kzX43v9FJmc/ds7p5BgQszKJaFZLG4MJs789X4Ti9lNnfP5u4ZFLgwg2JZSBaLC7O5M1+N7/RSZnNnRpfGDZJK1ktSyXpx8WzuzFfjO72U2dyZ0aVxg6SS9ZJUsl5cPJs789X4bvBS3zBjV1rWksXiwrzjG+adyc2P8d3gpb5hxq60rCWLxYV5xzfMO5ObH+O7Md//F+YJ7q/Gd2O+/y/ME9xfTe9+J/9FslhcmM2dGS6e0eVf9P96L/jrlsXiwmzuzHDxjC7/oul7+RM75xtvmXf6hoKk5Vxe56HpNa/eOd94y7zTNxQkLefyOg+9XZt/7Dyji7G1LErW0p2CpI3JzY/pXfPPnGd0MbaWRclaulOQtDG5+TG+q5dSJvKAZCHuzHDpecc38/lqfFcvpUzkAclC3Jnh0vOOb+bz1fhOkqS7S89wOc9z/ZTLbh6aXvNqJEl3l57hcp7n+imX3Tw0vfarJ7O592zuzKAgaXFhtu5dQL8a3+mlk9ncezZ3ZlCQtLgwW/cuoF9N7+BXezZ6y7pkvSQtSdK9i7G17l0Opnfwqz0bvWVdsl6SliTp3sXYWvcuB9M7+NXM6IJztywkC+lOsV3Hbku/mt7Br2ZGF5y7ZSFZSHeK7Tp2W/rV+E6SlqTF5TyjS+OmZV28ZUYX0Iem13n3krQkLS7nGV0aNy3r4i0zuoA+9HYN/wyz7TrYWhaLS89nXMLF8w43V9M78w8w266DrWWxuPR8xiVcPO9wczW9a/kd2XWct+ibLuYtc2NrWSxdDqZ3jZ+xXcd5i77pYt4yN7aWxdLlYHwnLsygIGnZFbgwz/GUde/SuLka34kLMyhIWnYFLsxzPGXduzRurp7/39/OP+AtM3aledszKEgqWZesl6SZt2ucf8ZbZuxK87ZnUJBUsi5ZL0kz0+t+tQtzY2vuzDvc2Lnv+Maz0a/Gd/VSF+bG1tyZd7ixc9/xjWejX03vkHdv5Eh23c43bC2Lo5yKOzO6HEzvwKt3ciS7bucbtpbFUU7FnRldDqZ3O/xY89YzKEgSd2a4ME/s7ulPfvOM5ZeLt55BQZK4M8OFeWJ3T38yfaZ/oAvoSFp2xdw9w4W5sYULM7oMTZ/pH+gCOpKWXTF3z3BhbmzhwowuQ2/P+Gd6Rhdja7uO3dad2X7Xr6Z38Kt7Rhdja7uO3dad2X7Xr8Z34sJsdMtiSSpZL0mLS884F2ZQfm36fH5tcWE2umWxJJWsl6TFpWecCzMovzZ93j/GbO7MZ1wiaelibNvvtu7MV+M7vZTZ3JnPuETS0sXYtt9t3Zmvxnebl9LhwtzYImnpgu4unjEvlsXN+G7zUjpcmBtbJC1d0N3FM+bFsrgZ3+mlzKBgV+DiGZSd3Q19Lo8tSUvSzfhOL2UGBbsCF8+g7Oxu6HN5bElakm6md6/yLySLAd8zm/t5ttf+j6Z3r/gTlsWA75nN/Tzba/9H47sx3zODgqQlaUnayJFMuucdbq7Gd2O+ZwYFSUvSkrSRI5l0zzvcXI3vBi893/TWpefmLXPbbelIejd9cvIz55veuvTcvGVuuy0dSe+mT/pnmM3dM1yYrbsLs9HhwnzG5a9Nn/ePMZu7Z7gwW3cXZqPDhfmMy1+bPu8fYzZ3z6AgqWS94RtmUJC0JC1JS9KStCTdjO/0UmZz9wwKkkrWG75hBgVJS9KStCQtSUvSzfhOL2U29/MMSst66dK4QdKSVLzt+Wp8p5cym/t5BqVlvXRp3CBpSSre9nw1vhu81DfMoCBp6WLeegYFSRt948I8NL2evNo3zKAgaeli3noGBUkbfePCPDS95tUTvmc2d2a4MINiWYi7Z7gwN7ZX47sx3zObOzNcmEGxLMTdM1yYG9ur6d3nb9/HevB9rAffx3rwfawH38d68H2sB9/HevB9rAffx3rwfawH38d68H2ssT9//gdE6fiWuiuHLQAAAABJRU5ErkJggg=="/>
+                                    <br/>
+                                    <span>للتحقق من البيانات امسح QR كود</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 padding-bottom-10 z-index-h">
+                                <div class="rating wrapper-tool">
+                                    <span class="fa fa-caret-down rating-num" style="font-size:20px;"></span>
+                                    <span class="rating-num">0 </span>
+                                    <div class="h2 text-primary ma" style="margin-bottom:0px; margin-top:0px;">التقييم </div>
+                                    <div class="h3 text-primary ma" style="margin-bottom:0px; margin-top:0px;">7 مُقيّــم </div>
+                                    <div class="tooltip-bb">
+                                        <div class="histo">
+                                            <div class="five histo-rate">
+                                                <span class="histo-star">
+                                                    <img src="/imges/rate-5.svg"/>&nbsp;
+                                                </span>
+                                                <span class="bar-block">
+                                                    <span id="bar-five" class="bar" style="width: 00%;">
+                                                        <span style="width:70px; float: left;">%0</span>
+                                                        &nbsp;
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="four histo-rate">
+                                                <span class="histo-star">
+                                                    <img src="/imges/rate-4.svg"/>&nbsp;
+                                                </span>
+                                                <span class="bar-block">
+                                                    <span id="bar-four" class="bar" style="width: 00%;">
+                                                        <span style="width:70px; float: left;">%0</span>
+                                                        &nbsp;
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="three histo-rate">
+                                                <span class="histo-star">
+                                                    <img src="/imges/rate-3.svg"/>&nbsp;
+                                                </span>
+                                                <span class="bar-block">
+                                                    <span id="bar-three" class="bar" style="width: 00%;">
+                                                        <span style="width:70px; float: left;">%0</span>
+                                                        &nbsp;
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="two histo-rate">
+                                                <span class="histo-star">
+                                                    <img src="/imges/rate-2.svg"/>&nbsp;
+                                                </span>
+                                                <span class="bar-block">
+                                                    <span id="bar-two" class="bar" style="width: 00%;">
+                                                        <span style="width:70px; float: left;">%0</span>
+                                                        &nbsp;
+                                                    </span>
+                                                </span>
+                                            </div>
+                                            <div class="one histo-rate">
+                                                <span class="histo-star">
+                                                    <img src="/imges/rate-1.svg"/>&nbsp;
+                                                </span>
+                                                <span class="bar-block">
+                                                    <span id="bar-one" class="bar" style="width: 00%;">
+                                                        <span style="width:70px; float: left;">%0</span>
+                                                        &nbsp;
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://play.google.com/store/apps/details?id=com.mci.balagh" id="balaghUrl" class="balagh-url" target="_blank">
+                                    <img alt="balagh-report-img" title="balagh-report" src="/imges/tahhhgp.svg"/>
+                                    <span>تقديم بلاغ تجاري</span>
+                                </a>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container text-right text-info">
+                            <div class="col-md-8 col-md-offset-4 primary-color mar-bottom-5">صحة جميع المعلومات الخاصة بالعمل تقع تحت مسؤولية صاحب العمل
+                </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="col-md-4 col-xs-12">
+                                <div class="panel panel-maroof panel-default">
+                                    <div class="panel-heading font-bold head">
+                                        <span>عن العمل </span>
+                                        <div class="wrraper">
+                                            <div class="icon">
+                                                <i class="fa fa-info"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body height-421 custom-flex">
+                                        <div class="col-xs-12 withScroll">متجر  بيع حسابات ببجي 
+            </div>
+                                        <div class="merge-btn center">
+                                            <div class="wrraper">
+                                                <span>
+                                                    <a href="#" data-toggle="modal" data-target="#viewBusinessRefundExchange" class="">سياسة الاستبدال و الاسترجاع </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="viewBusinessRefundExchange" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                            <div class="modal-dialog refund" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header ">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span>&times;</span>
+                                                        </button>
+                                                        <h3 class="modal-title" id="myModalLabel">سياسة الاستبدال و الاسترجاع </h3>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                <div class="description">
+                                                                    <p>لا يمكن الاستبدال او الاسترجاع وفقاً لطبيعة المنتج أو الخدمة المقدمة
+                                </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-xs-12">
+                                <div class="panel panel-maroof panel-default wrraper">
+                                    <div class="panel-heading font-bold">
+                                        <span>منصات العمل </span>
+                                        <div class="icon pull-left">
+                                            <i class="fa fa-link"></i>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body height-421">
+                                        <div class="wrraper">
+                                            <div class="col full">
+                                                <div class="social-row">
+                                                    <div class="media">
+                                                        <div class="media-right">
+<i class="fa-solid fa-voicemail"></i>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p class="text-primary" style="margin-bottom:0px;">الموقع الإلكتروني </p>
+                                                            <p class="text-primary">
+                                                                <a id="websiteURLAnchor" title="https://t.me/si_aiv" href="https://t.me/si_aiv" target="_blank">https://t.me/si_aiv</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col full">
+                                                <div class="social-row">
+                                                    <div class="media">
+                                                        <div class="media-right">
+                                                            <img src="/imges/mobile.svg"/>
+                                                        </div>
+                                                        <div class="media-body" style="padding-bottom:0px; vertical-align: middle;">
+                                                            <p class="text-primary" style="margin-bottom:0px;">منصات الوساطة</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col full-mobile">
+                                                <div class="social-row">
+                                                    <div class="media">
+                                                        <div class="media-right">
+                                                            <div style="font-size: 36px;
+background-color:#1e7182 !important;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+text-align: center;
+width: 40px;
+height: 40px;
+line-height: 29px;
+font-weight: bold;">
+                                                                <span style="color:white" title="t">t</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p class="text-primary" style="margin-bottom:0px;">متجر ببجي </p>
+                                                            <p class="text-primary">
+                                                                <a href="https://t.me/si_aiv" title="https://t.me/si_aiv" target="_blank" id="Wasata_1_Url">https://t.me/si_aiv</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                $(document).ready(function() {
+                                    $("#websiteURLAnchor").attr("href", addhttp($("#websiteURLAnchor").attr("href")));
+
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="col-md-8 col-xs-12 hidden-lg hidden-md">
+                                <div class="panel panel-maroof panel-default">
+                                    <div class="panel-heading font-bold">
+                                        <span>معلومات الاتصال </span>
+                                        <div class="icon">
+                                            <i class="fa fa-volume-control-phone"></i>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body height-455">
+                                        <div class="col-xs-12">
+                                            <div class="social-row">
+                                                <div class="media">
+                                                    <div class="media-right">
+                                                        <i class="fa fa-mobile website-icon"></i>
+                                                    </div>
+                                                    <div class="media-body" style="padding-right:5px;">
+                                                        <p class="text-primary" style="margin-bottom:0px;">رقم الجوال </p>
+                                                        <p class="text-primary">
+                                                            <a href="tel:0508509905">0508509905</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="social-row">
+                                                <div class="media">
+                                                    <div class="media-right">
+                                                        <i class="fa fa-envelope-square website-icon"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="text-primary" style="margin-bottom:0px;">البريد الإلكتروني </p>
+                                                        <p class="text-primary">
+                                                            <a href="mailto:Bubg7272@gmail.com">Bubg7272@gmail.com </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wrraper"></div>
+                                            <div class="col full">
+                                                <div class="social-row">
+                                                    <div class="media">
+                                                        <div class="media-right">
+                                                            <img src="/imges/whitsapp.png"/>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p class="text-primary" style="margin-bottom:0px;">واتس آب </p>
+                                                            <p class="text-primary">
+                                                                <a href="https://wa.me/9660578378250" target="_blank">9660578378250</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col full">
+                                                <div class="social-row">
+                                                    <div class="media">
+                                                        <div class="media-right">
+                                                            <img src="/imges/Bitmap%2002.png"/>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p class="text-primary" style="margin-bottom:0px;">تليجرام </p>
+                                                            <p class="text-primary">
+                                                                <a href="https://t.me/CC313S" title="https://t.me/CC313S" target="_blank" id="telegramUrlAnchor">https://t.me/CC313S</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="panel panel-maroof panel-default">
+                                    <div class="panel-heading font-bold">
+                                        <span>أعمال مشابهة</span>
+                                        <div class="icon">
+                                            <i class="fa fa-align-justify"></i>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <a href="https://maroof.sa/24519" class=" tab-pro-container">
+                                            <div class="media">
+                                                <div class="media-right">
+                                                    <img class="media-object img-circle img-100" alt="نايس ون" src=https://maroof.sa//app/businesses/Tmp/attachment_18269.jpg style="border:3px solid #ccc;">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h3 class="media-heading">نايس ون </h3>
+                                                    <h4 style="margin-bottom:0px;">تسويق إلكتروني</h4>
+                                                    <p style="margin-bottom:0px;">
+                                                        <span class="font-bold">التقييم:  &nbsp;&nbsp;&nbsp;</span>
+                                                        <span>9.4</span>
+                                                    </p>
+                                                    <h4>1492 مُقيّم</h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="https://maroof.sa/51267" class=" tab-pro-container">
+                                            <div class="media">
+                                                <div class="media-right">
+                                                    <img class="media-object img-circle img-100" alt="متجر إلقانس لوفرز الإلكتروني" src=https://maroof.sa//app/businesses/Tmp/attachment_44027.jpg style="border:3px solid #ccc;">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h3 class="media-heading">متجر إلقانس لوفرز الإلكتروني </h3>
+                                                    <h4 style="margin-bottom:0px;">تسويق إلكتروني</h4>
+                                                    <p style="margin-bottom:0px;">
+                                                        <span class="font-bold">التقييم:  &nbsp;&nbsp;&nbsp;</span>
+                                                        <span>9.9</span>
+                                                    </p>
+                                                    <h4>942 مُقيّم</h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="https://maroof.sa/48246" class=" tab-pro-container">
+                                            <div class="media">
+                                                <div class="media-right">
+                                                    <img class="media-object img-circle img-100" alt="متجر حلا للبطاقات الرقميه" src=https://maroof.sa//app/businesses/Tmp/attachment_158321.jpg style="border:3px solid #ccc;">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h3 class="media-heading">متجر حلا للبطاقات الرقميه </h3>
+                                                    <h4 style="margin-bottom:0px;">تسويق إلكتروني</h4>
+                                                    <p style="margin-bottom:0px;">
+                                                        <span class="font-bold">التقييم:  &nbsp;&nbsp;&nbsp;</span>
+                                                        <span>10</span>
+                                                    </p>
+                                                    <h4>851 مُقيّم</h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-xs-12 hidden-sm hidden-xs">
+                                <div class="panel panel-maroof panel-default">
+                                    <div class="panel-heading font-bold">
+                                        <span>معلومات الاتصال </span>
+                                        <div class="icon">
+                                            <i class="fa fa-volume-control-phone"></i>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body height-455">
+                                        <div class="col-xs-12">
+                                            <div class="social-row">
+                                                <div class="media">
+                                                    <div class="media-right">
+                                                        <i class="fa fa-mobile website-icon"></i>
+                                                    </div>
+                                                    <div class="media-body" style="padding-right:5px;">
+                                                        <p class="text-primary" style="margin-bottom:0px;">رقم الجوال </p>
+                                                        <p class="text-primary">
+                                                            <a href="tel:0508509905">0508509905</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="social-row">
+                                                <div class="media">
+                                                    <div class="media-right">
+                                                        <i class="fa fa-envelope-square website-icon"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="text-primary" style="margin-bottom:0px;">البريد الإلكتروني </p>
+                                                        <p class="text-primary">
+                                                            <a href="mailto:Bubg7272@gmail.com">Bubg7272@gmail.com </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wrraper"></div>
+                                            <div class="col full">
+                                                <div class="social-row">
+                                                    <div class="media">
+                                                        <div class="media-right">
+                                                            <img src="/imges/Bitmap 01.png"/>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p class="text-primary" style="margin-bottom:0px;">واتس آب </p>
+                                                            <p class="text-primary">
+                                                                <a href="https://wa.me/9660578378250" target="_blank">9660578378250</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col full">
+                                                <div class="social-row">
+                                                    <div class="media">
+                                                        <div class="media-right">
+                                                            <img src="/imges/Bitmap 02.png"/>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <p class="text-primary" style="margin-bottom:0px;">تليجرام </p>
+                                                            <p class="text-primary">
+                                                                <a href="https://t.me/CC313S" title="https://t.me/CC313S" target="_blank" id="telegramUrlAnchor">https://t.me/CC313S</a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="CertificateAddCommentdiv">
+                        <style>
+                            .pending-com {
+                                padding: 10px;
+                                background: #fceeee;
+                            }
+                        </style>
+                        <div class="row">
+                            <div class="container">
+                                <div class="col-md-8 col-xs-12 pull-left">
+                                    <div class="panel panel-maroof panel-default">
+                                        <div class="panel-heading font-bold">
+                                            <span>التعليقات (0)</span>
+                                            <div class="icon">
+                                                <i class="fa fa-comment"></i>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body height-455">
+                                            <div id="CommentMessageDiv" style="display:none">
+                                                <label id="" class="col-md-12 text-right alert alert-danger">لتقييم العمل أو التعليق عليه تفضل بتسجيل الدخول عن طريق :</label>
+                                            </div>
+                                            <form id="socialform" action="/Account/ExternalLogin?ReturnUrl=~%2F220001" method="post">
+                                                <input name="__RequestVerificationToken" type="hidden" value="8kA9NxHA1Eljw5d3B8yBy0x44rj6PTDVvnPaCSqJbYX01IUjROEZ2o6Ya357JLp1G7FjmEoqHmK37beYy5Fuy-1puXSTzrSstndYM-lscVs1"/>
+                                                <div class="col-md-12 pull-left col-xs-12 text-center">
+                                                    <button type="submit" class="btn1 btn-social btn-facebook text-center" style="border:none;" id="Facebook" name="provider" value="Facebook" title="Log in using your Facebook account">
+                                                        <i class="fa fa-facebook"></i>
+                                                        <span>Facebook</span>
+                                                    </button>
+                                                    <button type="submit" class="btn1 btn-social btn-twitter text-center" style="border:none;" id="Twitter" name="provider" value="Twitter" title=" using your Twitter account">
+                                                        <i class="fa fa-twitter"></i>
+                                                        <span>Twitter</span>
+                                                    </button>
+                                                    <button type="submit" class="btn1 btn-social btn-google text-center" style="border:none;" id="Google" name="provider" value="Google" title="Log in using your Google account">
+                                                        <i class="fa fa-google"></i>
+                                                        <span>Google</span>
+                                                    </button>
+                                                    <a class="btn1 btn-social btn-maroof-c text-center" style="border:none;" id="maroofauth" name="provider" title="Log in using your Maroof account" title="Log in using your Maroof account" href="https://efile.mc.gov.sa/ar/account/login?client_id=428E2F08-77B2-48AA-91F7-7D6ACEA47D2E&returnUrl=~%2F220001">
+                                                        <img src="/imges/ssss.png"/>Maroof
+                                    
+                                                    </a>
+                                                </div>
+                                            </form>
+                                            <form action="/BusinessCertificate/AddRate" data-ajax="true" data-ajax-failure="onFailureAddRateForm" data-ajax-loading="#dialog_loader" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-success="onSuccessAddRateForm" data-ajax-update="#CertificateAddCommentdiv" id="AddRatetForm" method="post">
+                                                <div class="col-xs-12 col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 mar-top-40">
+                                                    <span class="h3" style="margin-left:20px;position: relative;top: -19px; float:right;">قيم العمل </span>
+                                                    <span class="h3">
+                                                        <span id="rate1" class="rate-1"></span>
+                                                        <span id="rate2" class="rate-2"></span>
+                                                        <span id="rate3" class="rate-3"></span>
+                                                        <span id="rate4" class="rate-4"></span>
+                                                        <span id="rate5" class="rate-5"></span>
+                                                        <input data-val="true" data-val-number="الرجاء ادخال Rating بصيغة صحيحة" data-val-required="Rating مطلوب" id="Rating" name="Rating" type="hidden" value="0"/>
+                                                        <input data-val="true" data-val-number="الرجاء ادخال BusinessId بصيغة صحيحة" data-val-required="BusinessId مطلوب" id="BusinessId" name="BusinessId" type="hidden" value="220001"/>
+                                                    </span>
+                                                    <span class="h3 pull-right">
+                                                        <span id="rateResult"></span>
+                                                    </span>
+                                                </div>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                                <h3 class="modal-title" id="myModalLabel">تقييم العمل </h3>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <label for="" id="LikeQ">ما الذي لم يعجبك ؟</label>
+                                                                <textarea class="form-control comment-text" cols="20" data-val="true" data-val-maxlength="يجب أن لايزيد عدد حروف لسبب الاستياء عن 300 حرف" data-val-maxlength-max="300" id="Reason" maxlength="300" name="Reason" rows="2" style="resize:none"></textarea>
+                                                                <span class="field-validation-valid" data-valmsg-for="Reason" data-valmsg-replace="true" id="ReasonValidation"></span>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" onclick="RateSubmit()" class="btn btn-primary" id="AddRateSubmit" name="AddRateSubmit" value="2" disabled="disabled">اعتماد التقييم</button>
+                                                                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="removeActiveRatingClass()">إلغاء التقييم</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <script type="text/javascript">
+
+                                                    $(function() {
+                                                        init_validators('#AddCommentForm');
+                                                    });
+
+                                                    function onSuccessAddComentForm(data) {
+                                                        //debugger;
+
+                                                        $("#Comment").val("");
+                                                    }
+                                                    function onFailureAddComentForm(req, status, error) {
+                                                        // debugger;
+                                                        if (!req.responseJSON)
+                                                            console.error(req.responseText);
+                                                        if (req.responseJSON && req.responseJSON.modelStateErrors && req.responseJSON.modelStateErrors.length)
+                                                            renderModelStateErrors('form', req.responseJSON.modelStateErrors);
+                                                        else
+                                                            $("#addCommentValidation").html("<div class='alert alert-danger'>" + req.responseJSON.message + "</div>");
+                                                    }
+
+                                                    $(document).ready(function() {
+
+                                                        var RatingVal = $("#Rating").val();
+                                                        switch (RatingVal) {
+                                                        case "1":
+                                                            frate1();
+                                                            break;
+                                                        case "2":
+                                                            frate2();
+                                                            break;
+                                                        case "3":
+                                                            frate3();
+                                                            break;
+                                                        case "4":
+                                                            frate4();
+                                                            break;
+                                                        case "5":
+                                                            frate5();
+                                                            break;
+                                                        default:
+                                                            removeAll();
+                                                            break;
+
+                                                        }
+                                                        ;
+                                                        var rate1 = document.getElementById('rate1');
+                                                        var rate2 = document.getElementById('rate2');
+                                                        var rate3 = document.getElementById('rate3');
+                                                        var rate4 = document.getElementById('rate4');
+                                                        var rate5 = document.getElementById('rate5');
+                                                        var AddRateform = document.getElementById("AddRatetForm");
+
+                                                        rate1.addEventListener('click', function() {
+
+                                                            if ($("#Rating").val() == "1") {
+                                                                removeAll();
+                                                                RateSubmit();
+                                                            } else {
+                                                                var Auth = "False";
+
+                                                                if (Auth == "True") {
+                                                                    frate1();
+                                                                    $("#Rating").val("1");
+                                                                    $("#Reason").val("");
+                                                                    $("#LikeQ").show();
+
+                                                                    $("#Reason").show();
+                                                                    $('#myModal').modal('toggle');
+
+                                                                } else {
+                                                                    $('#myModal').modal('hide');
+                                                                    $("#CommentMessageDiv").show();
+                                                                }
+                                                            }
+                                                        }, false);
+
+                                                        rate2.addEventListener('click', function() {
+                                                            if ($("#Rating").val() == "2") {
+                                                                removeAll();
+                                                                RateSubmit();
+                                                            } else {
+                                                                var Auth = "False";
+
+                                                                if (Auth == "True") {
+                                                                    frate2();
+                                                                    $("#Rating").val("2");
+                                                                    $("#Reason").val("");
+                                                                    $("#Reason").show();
+                                                                    $("#LikeQ").show();
+
+                                                                    $('#myModal').modal('toggle');
+                                                                } else {
+                                                                    $('#myModal').modal('hide');
+                                                                    $("#CommentMessageDiv").show();
+                                                                }
+                                                            }
+
+                                                        }, false);
+
+                                                        rate3.addEventListener('click', function() {
+                                                            if ($("#Rating").val() == "3") {
+                                                                removeAll();
+                                                                RateSubmit();
+                                                            } else {
+                                                                var Auth = "False";
+
+                                                                if (Auth == "True") {
+                                                                    frate3();
+                                                                    $("#Rating").val("3");
+                                                                    $("#Reason").val("");
+                                                                    $("#Reason").hide();
+                                                                    $("#LikeQ").hide();
+                                                                    $("ReasonValidation").html("");
+                                                                    RateSubmit();
+                                                                } else {
+                                                                    $('#myModal').modal('hide');
+                                                                    $("#CommentMessageDiv").show();
+                                                                }
+
+                                                            }
+
+                                                        }, false);
+
+                                                        rate4.addEventListener('click', function() {
+
+                                                            if ($("#Rating").val() == "4") {
+
+                                                                removeAll();
+                                                                RateSubmit();
+                                                            } else {
+                                                                var Auth = "False";
+                                                                if (Auth == "True") {
+                                                                    frate4();
+                                                                    $("#Rating").val("4");
+                                                                    $("#Reason").val("");
+                                                                    $("#Reason").hide();
+                                                                    $("#LikeQ").hide();
+                                                                    $("ReasonValidation").html("");
+                                                                    RateSubmit();
+                                                                } else {
+                                                                    $('#myModal').modal('hide');
+                                                                    $("#CommentMessageDiv").show();
+                                                                }
+                                                            }
+                                                        }, false);
+
+                                                        rate5.addEventListener('click', function() {
+
+                                                            if ($("#Rating").val() == "5") {
+                                                                removeAll();
+                                                                RateSubmit();
+                                                            } else {
+                                                                var Auth = "False";
+                                                                if (Auth == "True") {
+
+                                                                    frate5();
+                                                                    $("#Rating").val("5");
+                                                                    $("#Reason").val("");
+                                                                    $("#Reason").hide();
+                                                                    $("#LikeQ").hide();
+                                                                    $("#ReasonValidation").html("");
+                                                                    RateSubmit();
+                                                                } else {
+                                                                    $('#myModal').modal('hide');
+                                                                    $("#CommentMessageDiv").show();
+                                                                }
+                                                            }
+
+                                                        }, false);
+                                                        function removeAll() {
+                                                            $("#Rating").val("0");
+                                                            $("#rate5").removeClass("active-r");
+                                                            $("#rate4").removeClass("active-r");
+                                                            $("#rate3").removeClass("active-r");
+                                                            $("#rate2").removeClass("active-r");
+                                                            $("#rate1").removeClass("active-r");
+                                                            $('#rateResult').html("");
+                                                            //RateSubmit();
+                                                        }
+                                                        function frate1() {
+                                                            $("#Rating").val("1");
+                                                            $("#rate1").addClass("active-r");
+                                                            //remove
+                                                            $("#rate5").removeClass("active-r");
+                                                            $("#rate4").removeClass("active-r");
+                                                            $("#rate3").removeClass("active-r");
+                                                            $("#rate2").removeClass("active-r");
+
+                                                        }
+                                                        function frate2() {
+                                                            $("#Rating").val("2");
+                                                            $("#rate2").addClass("active-r");
+                                                            $("#rate1").removeClass("active-r");
+                                                            //remove
+                                                            $("#rate5").removeClass("active-r");
+                                                            $("#rate4").removeClass("active-r");
+                                                            $("#rate3").removeClass("active-r");
+
+                                                        }
+
+                                                        function frate3() {
+                                                            $("#Rating").val("3");
+                                                            $("#rate3").addClass("active-r");
+                                                            $("#rate2").removeClass("active-r");
+                                                            $("#rate1").removeClass("active-r");
+                                                            //
+                                                            $("#rate5").removeClass("active-r");
+                                                            $("#rate4").removeClass("active-r");
+
+                                                        }
+                                                        function frate4() {
+                                                            $("#Rating").val("4");
+                                                            $("#rate4").addClass("active-r");
+                                                            $("#rate2").removeClass("active-r");
+                                                            $("#rate1").removeClass("active-r");
+                                                            $("#rate3").removeClass("active-r");
+                                                            //
+                                                            $("#rate5").removeClass("active-r");
+
+                                                        }
+
+                                                        function frate5() {
+
+                                                            $("#Rating").val("5");
+                                                            $("#rate5").addClass("active-r");
+                                                            $("#rate4").removeClass("active-r");
+                                                            $("#rate2").removeClass("active-r");
+                                                            $("#rate1").removeClass("active-r");
+                                                            $("#rate3").removeClass("active-r");
+                                                        }
+                                                    });
+
+                                                    function RateSubmit() {
+                                                        var RateForm = $("#AddRatetForm");
+                                                        if (RateForm.valid())
+                                                            RateForm.submit()
+                                                    }
+
+                                                    function removeActiveRatingClass() {
+                                                        //debugger;
+                                                        var ratingVal = $('#Rating').val();
+                                                        $('#rate' + ratingVal).removeClass("active-r");
+                                                    }
+
+                                                    function onSuccessAddRateForm() {
+                                                        //debugger;
+                                                        $('#rateResult').html("شكرا لتقييمك");
+                                                        $('#myModal').modal('hide');
+                                                        $(".modal-backdrop").remove();
+                                                        document.body.className = document.body.className.replace("modal-open", "");
+                                                    }
+                                                    function onFailureAddRateForm(req, status, error) {
+
+                                                        $('#myModal').modal('hide');
+                                                        //debugger;
+                                                        if (!req.responseJSON)
+                                                            console.error(req.responseText);
+                                                        if (req.responseJSON && req.responseJSON.modelStateErrors && req.responseJSON.modelStateErrors.length)
+                                                            renderModelStateErrors('form', req.responseJSON.modelStateErrors);
+                                                        else
+                                                            $("#rateResult").html(req.responseJSON.message);
+                                                        $(".modal-backdrop").remove();
+                                                        document.body.className = document.body.className.replace("modal-open", "");
+                                                    }
+                                                </script>
+                                            </form>
+                                            <form action="/BusinessCertificate/AddComment" data-ajax="true" data-ajax-failure="onFailureAddComentForm" data-ajax-loading="#dialog_loader" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-success="onSuccessAddComentForm" data-ajax-update="#CertificateAddCommentdiv" id="AddCommentForm" method="post">
+                                                <div class="col-xs-12" id="CommentDiv">
+                                                    <textarea class="form-control comment-text" cols="20" data-val="true" data-val-maxlength="التعليق يجب أن لا يزيد عن 300 حرف" data-val-maxlength-max="300" data-val-required="التعليق مطلوب" disabled="disabled" id="Comment" name="Comment" placeholder="أخبرنا عن رأيك..." rows="2" style="resize:none"></textarea>
+                                                    <span class="field-validation-valid" data-valmsg-for="Comment" data-valmsg-replace="true"></span>
+                                                    <input data-val="true" data-val-number="الرجاء ادخال BusinessId بصيغة صحيحة" data-val-required="The BusinessId field is required." id="BusinessId" name="BusinessId" type="hidden" value="220001"/>
+                                                </div>
+                                                <div class="col-xs-12 text-right" id="addCommentValidation"></div>
+                                                <div class="col-xs-12 text-left">
+                                                    <button type="submit" class="btn btn-primary" id="AddCommentSubmit" name="AddCommentSubmit" value="2" disabled="disabled">أضف تعليق</button>
+                                                    <br/>
+                                                </div>
+                                                <br/>
+                                            </form>
+                                            <script type="text/javascript">
+                                                //hidePleaseWait();
+                                                $(document).ready(function() {
+                                                    var Auth = "False";
+                                                    $("#CommentMessageDiv").hide();
+                                                    var CommentDiv = document.getElementById('CommentDiv');
+                                                    CommentDiv.addEventListener('click', function() {
+                                                        if (Auth == "False") {
+                                                            $("#CommentMessageDiv").show();
+                                                        }
+                                                    }, false);
+
+                                                    CommentDiv.addEventListener('keypress', Commentlistener, false);
+                                                    CommentDiv.addEventListener('change', Commentlistener, false);
+
+                                                    function Commentlistener() {
+                                                        if (Auth == "True") {
+                                                            if ($("#AddCommentForm").valid() & $("#AddCommentSubmit").length > 0) {
+                                                                $("#AddCommentSubmit").removeAttr("disabled", "disabled");
+                                                            } else {
+                                                                $("#AddCommentSubmit").attr("disabled", "disabled");
+                                                            }
+                                                        } else {
+                                                            $("#AddCommentSubmit").attr("disabled", "disabled");
+                                                        }
+
+                                                    }
+                                                });
+                                            </script>
+                                            <div class="col-xs-12">
+                                                <div class="col-xs-12 text-center">
+                                                    <h3>عفوا لا توجد تعليقات </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal hide" id="pleaseWaitDialog" data-backdrop="static" data-keyboard="false">
+                            <div class="modal-header">
+                                <h1>Processing...</h1>
+                            </div>
+                            <div class="modal-body">
+                                <div class="progress progress-striped active">
+                                    <div class="bar" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script id="comments" type="text/x-handlebars-template">
+                        
+    {{#Comment}}
+    <div class="media comment-row">
+        <div class="media-right">
+            <img class="media-object img-75" src="{{ImageCommentURL Photo}}" style="border:3px solid #ccc;">
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading text-primary"><span>{{CommentedByUser}}</span></h4>
+            <p style="margin-bottom:0px;">
+                <span>{{Comment}}</span>
+            </p>
+            <p class="small text-info">{{CreationDate}}</p>
+        </div>
+
+    </div>
+
+    {{/Comment}}
+
+                    </script>
+                    <script src="/Content/dev/js/handlebars.js"></script>
+                    <script>
+
+                        Handlebars.registerHelper('ImageCommentURL', function(ImagePath) {
+
+                            if (ImagePath == "" || ImagePath == null) {
+                                return "../Content/dist/images/user.png"
+                            } else {
+                                return ImagePath;
+                            }
+
+                        });
+                        var pageNumber = 1;
+                        var source = $("#comments").html();
+                        var template = Handlebars.compile(source);
+
+                        function loadMore() {
+                            var id = parseInt($("#businessId").val());
+                            $('#dialog_loader').show();
+                            var x = "~/" + id + "/" + pageNumber;
+                            $.get("/" + id + "/" + pageNumber, function(data, status) {
+
+                                var html = template(data);
+                                $(html).insertBefore("#loadMore").hide().fadeIn(2000);
+                                pageNumber = data.PageNumber;
+                                var resultsCount = data.Count - (data.Size * data.PageNumber);
+
+                                if (resultsCount <= 0) {
+                                    $("#loadMore").hide().fadeOut(2000);
+                                }
+
+                            });
+                            $('#dialog_loader').hide();
+                        }
+                    </script>
+                </div>
+                <script>
+                    $(document).ready(function() {
+                        $('.bar span').hide();
+                        $('#bar-five').animate({
+                            width: '% 00'
+                        }, 1000);
+                        $('#bar-four').animate({
+                            width: '% 00'
+                        }, 1000);
+                        $('#bar-three').animate({
+                            width: '% 00'
+                        }, 1000);
+                        $('#bar-two').animate({
+                            width: '% 00'
+                        }, 1000);
+                        $('#bar-one').animate({
+                            width: '% 00'
+                        }, 1000);
+                        $(".wrapper-tool").hover(function() {
+                            //On Hover - Works on ios
+                            $(".tooltip-bb").show();
+                        }, function() {
+                            //Hover Off - Hover off doesn't seem to work on iOS
+                            $(".tooltip-bb").hide();
+                        });
+                        setTimeout(function() {
+                            $('.bar span').fadeIn('slow');
+                        }, 1000);
+
+                        let os = getMobileOperatingSystem();
+
+                        if (os == "Android") {
+
+                            $("#balaghUrl").attr("href", "https://play.google.com/store/apps/details?id=com.mci.balagh")
+
+                        } else if (os == "iOS") {
+
+                            $("#balaghUrl").attr("href", "https://apps.apple.com/us/app/tqdym-blagh-mkhalft-tjaryt/id542190070");
+
+                        }
+                    });
+
+                    function getMobileOperatingSystem() {
+                        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+                        // Windows Phone must come first because its UA also contains "Android"
+                        if (/windows phone/i.test(userAgent)) {
+                            return "Windows Phone";
+                        }
+
+                        if (/android/i.test(userAgent)) {
+                            return "Android";
+                        }
+
+                        // iOS detection from: http://stackoverflow.com/a/9039885/177710
+                        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                            return "iOS";
+                        }
+
+                        return "unknown";
+                    }
+                </script>
+                <!-- ./ BODY -->
+            </div>
+        </div>
+        <!-- MAIN CONTAINER -->
+        <footer>
+            <div class="logos">
+                <ul>
+                    <li>
+                        <span>تطوير و تشغيل</span>
+                        <a href="https://thiqah.sa/">
+                            <img alt="thiqah" title="thiqah" src="/imges/ooth.svg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <span>تحت إشراف</span>
+                        <a href="https://mci.gov.sa/Pages/default.aspx?AspxAutoDetectCookieSupport=1">
+                            <img alt="mci" title="mci" src="/imges/KAS.png"/>
+                        </a>
+                    </li>
+                </ul>
+                <p>جميع الحقوق محفوظة ، ثقة © 2022</p>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="/">الرئيسية</a>
+                    </li>
+                    <li>
+                        <a href="https://maroof.sa/Home/About" class="">عن معروف</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="https://maroof.sa/Home/ContactUs" class="linkActive">تواصل معنا</a>
+                    </li>
+                    <li>
+                        <a href="https://maroof.sa/Home/Faq">أسئلة شائعة</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="https://maroof.sa/Home/Policy">شروط الاستخدام</a>
+                    </li>
+                    <li>
+                        <a href="https://maroof.sa/Home/Privacy">سياسة الخصوصية</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4>تابعونا </h4>
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/maroof_sa/" rel="noreferrer" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/maroof_sa/" rel="noreferrer" target="_blank">
+                            <i class="fa fa-twitter-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCKvEaEWYEvK0d-JT7H-MzaQ" rel="noreferrer" target="_blank">
+                            <i class="fa fa-youtube-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!--Handlebars global helpers-->
+        <script>
+            var hash = window.location.hash;
+            try {
+                var id = getParameterByName('id', hash);
+                if (id)
+                    window.location = "/" + id;
+            } catch (e) {
+            }
+            function getParameterByName(name, url) {
+                if (!url)
+                    url = window.location.href;
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)")
+                  , results = regex.exec(url);
+                if (!results)
+                    return null;
+                if (!results[2])
+                    return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+
+            Handlebars.registerHelper('RatingHelper', function(Rating) {
+
+                return parseFloat(Math.round(Rating * 100) / 100).toFixed(2);
+
+            });
+
+            Handlebars.registerHelper('if', function(conditional, options) {
+                switch (options.hash.compare) {
+                case '===':
+                case '==':
+                    {
+                        if (conditional == options.hash.length)
+                            options.fn(this);
+                        else {
+                            options.inverse(this);
+                        }
+                    }
+                case '>':
+                    {
+                        if (conditional > options.hash.length) {
+                            return options.fn(this);
+                        } else {
+                            return options.inverse(this);
+                        }
+                    }
+                case '<':
+                    {
+                        if (conditional < options.hash.length)
+                            return options.fn(this);
+                        else {
+                            return options.inverse(this);
+                        }
+                    }
+                }
+
+            });
+
+            $("#search-formNew").submit(function() {
+
+                var searchValue = $("input[name *= 'keyword']").val();
+                if (!searchValue) {
+                    mciMessage('ادخل نص للبحث', mciMessageType.Danger, 3);
+                    return false;
+                }
+                if (searchValue.trim().length < 2) {
+                    mciMessage('يجب ادخال حرفين على الاقل', mciMessageType.Danger, 3);
+                    return false;
+                }
+                var regex = /[^\u0621-\u064A\u0660-\u0669\\s\\da-zA-Z0-9]+$/;
+                var res = regex.test(searchValue);
+                if (res == true) {
+                    mciMessage('يجب ان تكون القيمة المدخلة بدون رموز', mciMessageType.Danger, 3);
+                    return false;
+                    // block the default submit action
+                } else
+                    return true;
+
+            });
+        </script>
+        <script id="notifications-menu-template" type="text/x-handlebars-template">
+            
+        {{#notifications}}
+        <li onclick=markAsViewed({{Id}},this)><a href="/{{BusinessId}}">{{Title}}</a></li>
+        {{/notifications}}
+    
+        </script>
+        <script type="text/javascript">
+            var clicky_site_ids = clicky_site_ids || [];
+            clicky_site_ids.push(100935705);
+            (function() {
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//static.getclicky.com/js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+            }
+            )();
+        </script>
+        <noscript>
+            <p>
+                <img alt="Clicky" title="Clicky" width="1" height="1" src="//in.getclicky.com/100935705ns.gif"/>
+            </p>
+        </noscript>
+        <div id="dialog_loader" class="pop-loading" style="display: none">
+            <section>
+                <div class="loader-icon">
+                    <img alt="loading" title="loading" src="/imges/loading-1.png" class="img-responsive">
+                </div>
+            </section>
+        </div>
+        <script>
+            function markAsViewed(id, control) {
+                $.get("/Notifications/MarkAsViewed?id=" + id, function(data) {
+                    $('#' + control.id).remove();
+                })
+            }
+        </script>
+        <script>
+            //if ('serviceWorker' in navigator) {
+            //    navigator.serviceWorker
+            //        .register('/serviceworker.js')
+            //        .then(function () { /* console.log('Service Worker Registered'); */ });
+            //}
+        </script>
+        <script>
+            ;(function(d, s, c) {
+                var j = d.createElement(s)
+                  , t = d.getElementsByTagName(s)[0]
+
+                //j.src = 'https://<your-cdn-host>.com/path/to/elastic-apm-rum.umd.min-<version>.js'
+
+                j.src = '/Content/Dev/js/elastic-apm-rum.umd.min.js'
+                j.onload = function() {
+                    elasticApm.init(c);
+
+                }
+                t.parentNode.insertBefore(j, t)
+            }
+            )(document, 'script', {
+                serviceName: 'Maroof-Web-FE',
+                serverUrl: 'https://rum.thiqah.sa',
+                environment: 'Production'
+            });
+        </script>
+    </body>
+</html>
